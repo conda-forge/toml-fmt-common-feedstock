@@ -9,7 +9,7 @@ source:
   sha256: 7a29e99e527ffac456043296a0f1d8c03aaa1b06167bd39ad5e3cc5041f31c17
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
@@ -19,9 +19,9 @@ requirements:
     - hatch-vcs >=0.4
     - hatchling >=1.25
     - pip
-    - python >=3.9
+    - python {{ python_min }}
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - tomli >=2.0.2
 
 test:
@@ -39,6 +39,7 @@ test:
     - pip
     - pytest
     - pytest-mock
+    - python {{ python_min }}
 
 about:
   home: https://github.com/tox-dev/toml-fmt-common
