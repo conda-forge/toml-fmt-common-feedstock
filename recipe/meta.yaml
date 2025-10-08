@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: toml-fmt-common
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/toml-fmt-common/toml_fmt_common-{{ version }}.tar.gz
-  sha256: 7a29e99e527ffac456043296a0f1d8c03aaa1b06167bd39ad5e3cc5041f31c17
+  sha256: e4ba8f13e5fe25cfe0bfc60342ad7deb91c741fd31f2e5522e6a51bfbf1427d3
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
