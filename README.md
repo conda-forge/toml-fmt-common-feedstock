@@ -3,11 +3,13 @@ About toml-fmt-common-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/toml-fmt-common-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/tox-dev/toml-fmt-common
+Home: https://pypi.org/project/toml-fmt-common
 
 Package license: MIT
 
 Summary: Common logic to the TOML formatter.
+
+Development: https://github.com/tox-dev/toml-fmt-common
 
 Current build status
 ====================
