@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 1.1.0
+  version: "1.2.0"
 
 package:
   name: toml-fmt-common
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/toml-fmt-common/toml_fmt_common-${{ version }}.tar.gz
-  sha256: e4ba8f13e5fe25cfe0bfc60342ad7deb91c741fd31f2e5522e6a51bfbf1427d3
+  sha256: 9c3630dc9409157e866b27ee0cdacf453636735b26dcf0fff385d3d2c1166698
 
 build:
   number: 0
