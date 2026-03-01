@@ -21,13 +21,12 @@ build:
 
 requirements:
   host:
-    - hatch-vcs >=0.5
-    - hatchling >=1.27
     - pip
     - python ${{ python_min }}.*
+    - uv-build >=0.7.22,<0.8
   run:
     - python >=${{ python_min }}
-    - tomli >=2.2.1
+    - tomli >=2.4
 
 tests:
   - python:
@@ -58,7 +57,7 @@ about:
   license: MIT
   license_file: LICENSE.txt
   homepage: https://pypi.org/project/toml-fmt-common
-  repository: https://github.com/tox-dev/toml-fmt-common
+  repository: https://github.com/tox-dev/toml-fmt/tree/main/toml-fmt-common
 
 extra:
   recipe-maintainers:
