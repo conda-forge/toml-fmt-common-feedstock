@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.2.0"
+  version: "1.3.0"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/toml-fmt-common/toml_fmt_common-${{ version }}.tar.gz
-  sha256: 9c3630dc9409157e866b27ee0cdacf453636735b26dcf0fff385d3d2c1166698
+  sha256: afb8be55f4aa79f6d1cdd91e698afba4d31ffbc2e6ae60c4f002f6c2acc492cf
 
 build:
   number: 0
