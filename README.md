@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: Common logic to the TOML formatter.
 
-Development: https://github.com/tox-dev/toml-fmt-common
+Development: https://github.com/tox-dev/toml-fmt/tree/main/toml-fmt-common
 
 Current build status
 ====================
