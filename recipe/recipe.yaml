@@ -37,23 +37,22 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - ${{ python_check_max }}.*
-  # TODO: restore tests when upstream provides tests in sdist or at least predictable tags
-  # - files:
-  #     source:
-  #       - tests/
-  #   requirements:
-  #     run:
-  #       - coverage
-  #       - pytest
-  #       - pytest-mock
-  #       - python ${{ python_min }}.*
-  #   script:
-  #     - if: unix
-  #       then:
-  #         - coverage run --source=toml_fmt_common -m pytest -vv --tb=long --color=yes
-  #         - coverage report --show-missing --skip-covered --fail-under=95
-  #       else:
-  #         - pytest -vv --tb=long --color=yes -k "not (is_folder or no_read)"
+  - files:
+      source:
+        - tests/
+    requirements:
+      run:
+        - coverage
+        - pytest
+        - pytest-mock
+        - python ${{ python_min }}.*
+    script:
+      - if: unix
+        then:
+          - coverage run --source=toml_fmt_common -m pytest -vv --tb=long --color=yes
+          - coverage report --show-missing --skip-covered --fail-under=95
+        else:
+          - pytest -vv --tb=long --color=yes -k "not (is_folder or no_read)"
 
 about:
   summary: Common logic to the TOML formatter.
