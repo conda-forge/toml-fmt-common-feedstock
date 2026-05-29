@@ -28,7 +28,7 @@ requirements:
     - uv-build >=0.7.22,<0.8
   run:
     - python >=${{ python_min }}
-    - tomli >=2.4
+    - tomli >=2.4.1
 
 tests:
   - python:
